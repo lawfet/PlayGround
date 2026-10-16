@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PACKRUSH — Sorting Parcel Packaging Game (Java Desktop)</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+  <header id="hero">
+    <div class="logo">PACKRUSH</div>
+    <div class="tag">THE SORTING PARCEL PACKAGING GAME — JAVA DESKTOP EDITION</div>
+    <div class="pills">
+      <span>2D GAME</span><span>DESKTOP</span><span>JAVA SWING</span><span>1280 × 720</span>
+    </div>
+  </header>
+
+  <main id="grid">
+    <section class="card">
+      <h2>▶ How to run (Java 17)</h2>
+      <pre><code>./build.sh
+./run.sh</code></pre>
+      <p class="dim">Or manually: <code>javac -d out $(find src -name "*.java") &amp;&amp; java -cp out com.packrush.Main</code></p>
+      <p>Sources live in <code>src/com/packrush/</code> — pure Swing, zero dependencies.</p>
+    </section>
+
+    <section class="card">
+      <h2>🎮 Screens</h2>
+      <ul>
+        <li><b>Title</b> — animated belt, PRESS ENTER OR CLICK TO START</li>
+        <li><b>Menu</b> — START SHIFT · HOW TO PLAY · SETTINGS</li>
+        <li><b>Settings</b> — CHILL / STANDARD / RUSH difficulty, sound, screen shake</li>
+        <li><b>Pause</b> — P / ESC (resume, restart, quit)</li>
+        <li><b>Game over</b> — rank S/A/B/C/D/F, stats, NEW BEST crown</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📦 How to play</h2>
+      <ol>
+        <li><b>TAPE IT</b> — <code>SPACE</code> or click a parcel. Fragile needs <b>2 tapes</b>.</li>
+        <li><b>SORT IT</b> — in the SORT ZONE press <code>A S D</code> / <code>1 2 3</code> for RED / BLUE / YELLOW.</li>
+        <li><b>OR DRAG IT</b> — grab any parcel and drop it on the right truck.</li>
+        <li><b>DON'T BLOW IT</b> — wrong truck or parcel falling off = 1 strike. 3 strikes = shift failed.</li>
+      </ol>
+      <p class="dim">Golden parcels = +500 · taped + correct = combo bonus · un-taped = only +30</p>
+    </section>
+
+    <section class="card">
+      <h2>⌨ Controls</h2>
+      <table>
+        <tr><td><code>SPACE</code> / click</td><td>tape &amp; pack</td></tr>
+        <tr><td><code>A S D</code> / <code>1 2 3</code></td><td>sort to trucks</td></tr>
+        <tr><td>drag &amp; drop</td><td>sort with mouse</td></tr>
+        <tr><td><code>P</code> / <code>ESC</code></td><td>pause</td></tr>
+        <tr><td><code>M</code></td><td>mute</td></tr>
+        <tr><td><code>R</code> / <code>Q</code></td><td>retry / menu</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer id="foot">Java Swing desktop build · high score + settings saved to <code>packrush_save.properties</code></footer>
+</div>
+</body>
+</html>

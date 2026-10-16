@@ -1,0 +1,55 @@
+:root{
+  --bg:#0d1020;
+  --panel:#171c33;
+  --accent:#ffb020;
+  --accent2:#3ddcff;
+  --good:#3dff8a;
+  --bad:#ff4d5e;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:
+    radial-gradient(900px 500px at 20% -10%, #24306b 0%, transparent 60%),
+    radial-gradient(900px 500px at 90% 110%, #3a1c5a 0%, transparent 60%),
+    var(--bg);
+  color:#eef1ff;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  min-height:100vh;
+  padding:28px 18px 40px;
+  display:flex;justify-content:center;
+}
+#wrap{width:min(1080px,100%);display:flex;flex-direction:column;gap:18px}
+#hero{text-align:center;padding:26px 16px 6px}
+.logo{
+  font-family:"Archivo Black",Inter,sans-serif;
+  font-size:clamp(56px,10vw,110px);
+  line-height:1;
+  background:linear-gradient(180deg,#ffc83c,#ff6e28);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 20px 60px rgba(255,150,30,.15);
+}
+.tag{margin-top:10px;letter-spacing:3px;font-weight:800;font-size:13px;color:#a9b2d6}
+.pills{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.pills span{
+  font-size:12px;font-weight:800;letter-spacing:1px;
+  border:1px solid rgba(255,255,255,.16);border-radius:999px;
+  padding:6px 12px;background:rgba(255,255,255,.05);
+}
+#grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:800px){#grid{grid-template-columns:1fr}}
+.card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;padding:18px 20px;
+}
+.card h2{margin:0 0 10px;font-size:18px}
+.card ul,.card ol{margin:8px 0;padding-left:20px;line-height:1.65;font-size:14.5px}
+.dim{color:#a9b2d6;font-size:13.5px}
+pre{background:#0a0d1d;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;overflow:auto}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+td{padding:6px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
+td:first-child{white-space:nowrap;width:170px}
+#foot{text-align:center;color:#a9b2d6;font-size:13px}
